@@ -1,43 +1,330 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<!-- /*
+* PROYECTO TALLER-D
+*/ -->
+<!doctype html>
+<html lang="es">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="author" content="Untree.co">
+	<link rel="shortcut icon" href="favicon.png">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap5" />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/feather/style.css">
+	<link rel="stylesheet" href="css/tiny-slider.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/glightbox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Taller-D &mdash; FAADU - UMSA</title>
+</head>
+<body>
+
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+
+	<nav class="site-nav" aria-label="Main navigation">
+		<div class="container">
+			<div class="site-navigation">
+				<a href="index.html" class="logo m-0">Taller-D</a>
+
+				<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+					<li class="active"><a href="index.html">Inicio</a></li>
+					<li class="has-children">
+						<a href="academico.html">Académico</a>
+						<ul class="dropdown">
+							<li><a href="equipo.html">Nuestro equipo</a></li>
+							<li><a href="filosofia.html">Filosofía</a></li>
+							<li><a href="grupos.html">Grupos del Taller-D</a></li>
+							<li><a href="cronograma.html">Cronograma anual</a></li>
+						</ul>
+					</li>
+					<li><a href="virtual.html">Taller-D-Virtual</a></li>
+					<li><a href="noticias.html">Noticias</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li><a href="login.html" class="login-link"><span class="icon-google"></span></a></li>
+				</ul>
+
+				<a href="#" class="burger ms-auto float-end site-menu-toggle mt-2 js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+					<span></span>
+				</a>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="hero v-h-full overlay">
+		<div class="img-bg rellax">
+			<img src="images/hero_1.jpg" alt="Taller-D Hero Image" class="img-fluid" onerror="this.onerror=null; this.src='images/fallback.jpg';">
+		</div>
+		<div class="container">
+			<div class="row align-items-center v-h-full">
+
+				<div class="col-lg-10 col-xxl-6">
+					<h1 class="heading-2 text-white mb-5" data-aos="fade-up">Innovación, Diseño y Educación de Vanguardia</h1>
+					<p data-aos="fade-up" class="d-flex" data-aos-delay="200">
+						<a href="virtual.html" class="btn btn-primary-outline white me-4">Virtual</a>
+						<a href="https://www.youtube.com/watch?v=LTCqvDPe_qc" 
+						   class="glightbox d-inline-flex align-items-center playvid"
+						   aria-label="Ver video de nuestro trabajo">
+							<span class="icon-play me-2"></span>
+							<span>Mira nuestro trabajo</span>
+						</a>
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="section bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12"></div>
+					<span></span>
+					<h2 class="mb-4">Taller-D es un espacio de aprendizaje dinámico, donde se fomenta la colaboración interdisciplinaria y se exploran soluciones innovadoras a través de proyectos que integran aspectos técnicos, sociales, culturales y ambientales</h2>
+				<div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="0">
+					<div class="service grayscale">
+						<div class="service-img">
+							<a href="#"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
+						</div>
+						<div class="service-inner">
+							<span></span>
+							<h3>Creatividad</h3>
+							<p>Formando los Visionarios del Diseño Urbano: Aprende, Crea y Lidera el Futuro de la Arquitectura.</p>
+							<p class="mb-0"><a href="#" class="more">Leer más</a></p>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+					<div class="service grayscale">
+						<div class="service-img">
+							<a href="#"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
+						</div>
+						<div class="service-inner">
+							<span></span>
+							<h3>Funcionalidad</h3>
+							<p>Innovación, Investigación y Diseño: El Camino hacia una Educación en Arquitectónica de Excelencia.</p>
+							<p class="mb-0"><a href="#" class="more">Leer más</a></p>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+					<div class="service grayscale">
+						<div class="service-img">
+							<a href="#"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
+						</div>
+						<div class="service-inner">
+							<span></span>
+							<h3>Colaboración</h3>
+							<p>La arquitectura moderna es la suma del compromiso con la sostenibilidad y el respeto por el entorno.</p>
+							<p class="mb-0"><a href="#" class="more">Leer más</a></p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
+					<span class="subheading mb-2 d-inline-block">Taller-D Virtual</span>
+					<h2 class="mb-4">Nuestros proyectos</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+							<a href="images/img_v_1-min.jpg" class="media-1 glightbox" data-title="Reinventando la Vivienda Urbana" data-description="Descripción Técnica: Proyecto de un complejo habitacional de alta densidad en el centro de la ciudad, diseñado para maximizar el uso de espacios reducidos. Las unidades cuentan con paneles solares, sistemas de recolección de agua de lluvia y materiales reciclables, integrando espacios verdes en terrazas y balcones. Este proyecto optimiza la sostenibilidad y la funcionalidad, creando un modelo adaptable para viviendas urbanas.">
+								<img src="images/img_v_1-min.jpg" alt="Image" class="img-fluid">
+								<div class="media-1-content">
+									<h2>Casa K22</h2>
+									<span class="category">Estudiante: Juan Pérez R.</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+							<a href="images/img_v_2-min.jpg" class="media-1 glightbox" data-title="Centro Cultural Flotante" data-description="Descripción Técnica: Espacio multifuncional para eventos y talleres, construido sobre una plataforma flotante en el río. Utiliza materiales ligeros como acero galvanizado y madera tratada para la humedad. El diseño incluye una estructura modular para facilitar el montaje y desmontaje, adaptándose a las fluctuaciones del nivel del agua. El proyecto explora la interacción entre arquitectura y entorno natural, creando un espacio cultural resiliente y respetuoso del medio ambiente.">
+								<img src="images/img_v_2-min.jpg" alt="Image" class="img-fluid">
+								<div class="media-1-content">
+									<h2>Centro Cultural Flotante</h2>
+									<span class="category">Estudiante: Carlos Méndez</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+							<a href="images/img_v_3-min.jpg" class="media-1 glightbox" data-title="Campus de Aprendizaje Sustentable" data-description="Descripción Técnica: Diseñado para una universidad en un entorno natural, este proyecto prioriza la integración con el paisaje y la eficiencia energética. Los edificios tienen fachadas ventiladas y sistemas de recolección de agua pluvial. Se utilizaron materiales locales de baja emisión de carbono y se implementaron estrategias de bioclimatización. Los espacios se distribuyen para maximizar la luz natural y reducir la dependencia de energía eléctrica, fomentando un entorno académico sostenible.">
+								<img src="images/img_v_3-min.jpg" alt="Image" class="img-fluid">
+								<div class="media-1-content">
+									<h2>Campus de Aprendizaje Sustentable</h2>
+									<span class="category">Estudiante: Lucía Fernández</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+							<a href="images/img_v_4-min.jpg" class="media-1 glightbox" data-title="Biblioteca Comunitaria Modular" data-description="Descripción ampliada del proyecto de la Familia Rocha realizado por Andrea López P.">
+								<img src="images/img_v_4-min.jpg" alt="Image" class="img-fluid">
+								<div class="media-1-content">
+									<h2>Biblioteca Comunitaria Modular</h2>
+									<span class="category">Estudiante: Raúl Villanueva</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+							<a href="images/img_v_5-min.jpg" class="media-1 glightbox" data-title="Estación de Reciclaje Urbana" data-description="Descripción Técnica: Instalación para reciclaje urbano en una zona densamente poblada. El diseño circular de la estructura facilita el flujo de materiales reciclables a través de estaciones específicas de clasificación. Consta de una cubierta de paneles solares que alimenta los equipos de procesamiento. Este proyecto explora la relación entre infraestructura urbana y gestión ambiental, promoviendo el reciclaje como una actividad de fácil acceso para la comunidad.">
+								<img src="images/img_v_5-min.jpg" alt="Image" class="img-fluid">
+								<div class="media-1-content">
+									<h2>Estación de Reciclaje Urbana</h2>
+									<span class="category">Estudiante: Mariana Soto</span>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+							<a href="images/img_v_6-min.jpg" class="media-1 glightbox" data-title="Refugio de Montaña Autosuficiente" data-description="Descripción Técnica: Refugio en zonas de alta montaña, pensado para excursionistas y escaladores. La estructura utiliza madera laminada y revestimientos resistentes al clima extremo, con aislamiento térmico natural. Cuenta con un sistema de energía solar y almacenamiento de agua de deshielo. Este refugio enfatiza la autosuficiencia y la seguridad en entornos remotos, siendo un ejemplo de arquitectura sostenible y funcional en ambientes naturales desafiantes.">
+								<img src="images/img_v_6-min.jpg" alt="Image" class="img-fluid">
+								<div class="media-1-content">
+									<h2>Refugio de Montaña Autosuficiente</h2>
+									<span class="category">Estudiante: Javier Torres</span>
+								</div>
+							</a>
+						<p><a href="virtual.html" class="btn btn-black">Todos nuestros proyectos</a></p>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 pe-lg-5" data-aos="fade-up">
+					<span class="subheading d-inline-block mb-2">Diseñamos</span>
+					<h2 class="mb-4">Innovación Académica y Reflexión Crítica para un Diseño Responsable</h2>
+					<p class="mb-5">En Taller-D, el aprendizaje no termina en las aulas. Nos comprometemos a transformar el entorno académico en un espacio donde el rigor técnico y la pasión por la innovación se encuentren. A través de proyectos colaborativos, investigación y desarrollo, impulsamos la creación de una arquitectura que va más allá de lo convencional.</p>
+					<p><a href="filosofia.html" class="btn btn-black">Taller-D</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="section bg-light">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6" data-aos="fade-up">
+					<img src="images/team.jpg" alt="Nuestro Equipo" class="img-fluid rounded">
+				</div>
+				<div class="col-lg-6 ps-lg-5" data-aos="fade-up" data-aos-delay="100">
+					<span class="subheading d-inline-block mb-2">Nuestro equipo</span>
+					<h2 class="mb-4">Profesionales comprometidos con la excelencia académica</h2>
+					<p class="mb-5">Nuestro equipo está formado por docentes arquitectos apasionados por la enseñanza y el diseño. Cada miembro aporta una perspectiva única y experiencia diversa, creando un ambiente de aprendizaje dinámico y enriquecedor para nuestros estudiantes.</p>
+					<p>Trabajamos en estrecha colaboración para desarrollar programas educativos innovadores que combinen teoría y práctica, preparando a la próxima generación de arquitectos para enfrentar los desafíos del futuro.</p>
+					<p><a href="equipo.html" class="btn btn-black">Nuestro equipo</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section mb-5"></div>
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-lg-7" data-aos="fade-up">
+					<H2>Somos y construimos.</H2>
+					<span class="subheading mb-2 d-inline-block">Noticias</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+					<a href="#"><img src="images/img_v_7-min.jpg" alt="Image" class="img-fluid rounded mb-4"></a>
+					<h3 class="h4 mb-3"><a href="#">Arquitectura Sostenible: Nuevas Normativas que Transforman el Diseño Urbano Global</a></h3>
+					<p>En un esfuerzo por mitigar los efectos del cambio climático, las principales ciudades del mundo están implementando nuevas normativas que exigen a los arquitectos incorporar soluciones sostenibles en todos los nuevos proyectos. Desde el uso obligatorio de materiales reciclados hasta la integración de energías renovables en edificios de gran escala, estas regulaciones están moldeando un futuro más verde para la arquitectura urbana. En Taller-D, nuestros estudiantes están liderando este cambio, desarrollando proyectos que no solo cumplen con estas normativas, sino que superan las expectativas, creando espacios urbanos que promueven la eficiencia energética y el respeto por el medio ambiente.</p>
+					<p class="mb-0"><a href="#" class="more">Ampliar nota</a></p>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+					<a href="#"><img src="images/img_v_8-min.jpg" alt="Image" class="img-fluid rounded mb-4"></a>
+					<h3 class="h4 mb-3"><a href="#">La Arquitectura Modular: La Solución a la Crisis de Vivienda Global</a></h3>
+					<p>A medida que la crisis de vivienda continúa creciendo en muchas partes del mundo, la arquitectura modular se perfila como una de las soluciones más eficaces. Este enfoque permite la construcción rápida, asequible y eficiente de viviendas utilizando unidades prefabricadas que se ensamblan en el sitio. Además de reducir los costos y tiempos de construcción, las viviendas modulares están diseñadas para ser más sostenibles, utilizando materiales de bajo impacto ambiental y sistemas de energía renovable. Los estudiantes de Taller-D están trabajando en proyectos que integran estos principios, demostrando cómo la arquitectura modular puede transformar el paisaje urbano, ofreciendo soluciones a comunidades vulnerables.</p>
+					<p class="mb-0"><a href="#" class="more">Ampliar nota</a></p>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+					<a href="#"><img src="images/img_v_9-min.jpg" alt="Image" class="img-fluid rounded mb-4"></a>
+					<h3 class="h4 mb-3"><a href="#">El Renacimiento de los Espacios Públicos: Creando Ciudades Más Humanas</a></h3>
+					<p>En una época en la que la urbanización está en su punto más alto, los espacios públicos están recibiendo una atención renovada en el ámbito arquitectónico. Los arquitectos están replanteando cómo diseñar espacios públicos para hacerlos más inclusivos, accesibles y agradables para todos los ciudadanos. Esto incluye desde parques y plazas hasta corredores urbanos, todos diseñados con un enfoque en la interacción social y el bienestar. Taller-D se compromete a formar arquitectos que entienden la importancia de estos espacios en la vida diaria, y nuestros estudiantes están creando diseños innovadores que buscan restaurar la conexión humana.</p>
+					<p class="mb-0"><a href="#" class="more">Ampliar nota</a></p>
+				</div>
+				<p><a href="noticias.html" class="btn btn-black">Leer más noticias</a></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="widget">
+						<ul class="list-unstyled social">
+							<li><a href="#"><span class="icon-instagram"></span></a></li>
+							<li><a href="#"><span class="icon-twitter"></span></a></li>
+							<li><a href="#"><span class="icon-facebook"></span></a></li>
+							<li><a href="#"><span class="icon-linkedin"></span></a></li>
+							<li><a href="#"><span class="icon-youtube"></span></a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-4 -->
+			</div> <!-- /.row -->
+
+			<div class="row mt-5">
+				<div class="col-12 text-center">
+					<p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved - Taller-D FAADU-UMSA &mdash; Desarrolado por <a href="https://pulsocreativos.com">PulsoCreativos</a> <!-- License information: https://untree.co/license/ -->
+					</p>
+				</div>
+			</div>
+		</div> 
+	</div>
+
+	<!-- Preloader -->
+	<div id="overlayer"></div>
+	<div class="loader">
+		<div class="spinner-border" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div>
+	</div>
+
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/tiny-slider.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/navbar.js"></script>
+	<script src="js/glightbox.min.js"></script>
+	<script src="js/rellax.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
 </html>
