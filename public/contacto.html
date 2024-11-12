@@ -11,8 +11,11 @@
 	<meta name="author" content="Untree.co">
 	<link rel="shortcut icon" href="favicon.png">
 
-	<meta name="description" content="" />
+	<meta name="description" content="Taller-D FAADU-UMSA" />
 	<meta name="keywords" content="bootstrap, bootstrap5" />
+
+    <!-- Add Google Sign In meta -->
+	<meta name="google-signin-client_id" content="609812063852-o48rdsd95u63mgjikg5e4ug48d7k0l5u.apps.googleusercontent.com">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
@@ -25,7 +28,47 @@
 	<link rel="stylesheet" href="css/glightbox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>Taller-D &mdash; FAADU - UMSA</title>
+	<title>Contacto - Taller-D | FAADU - UMSA</title>
+
+    <head>
+        
+        <style>
+            
+            .site-footer .widget h3 {
+                color: #ffffff;
+                background-color: black;
+                font-weight: 600;
+                position: relative;
+                padding: 10px 10px;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+    
+            .site-footer .widget h3::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 50px;
+                height: 2px;
+                
+            }
+    
+            /* This ensures the style only applies to the contact page */
+            .widget h3:hover {
+                color: white;
+                transition: color 0.3s ease;
+            }
+            .widget ul.links li a {
+            color: white; /* Color base */
+                transition: color 0.3s ease;
+            }
+
+            .widget ul.links li a:hover {
+        color: white; /* Color al pasar el mouse */
+        text-decoration: none;
+        </style>
+    </head>
 </head>
 <body>
 
@@ -70,63 +113,119 @@
 
 	<div class="hero v-h-full overlay">
 		<div class="img-bg rellax">
-			<img src="images/hero_1.jpg" alt="Taller-D Hero Image" class="img-fluid" onerror="this.onerror=null; this.src='images/fallback.jpg';">
+			<img src="images/hero-2-min.jpg" alt="Image" class="img-fluid">
 		</div>
 		<div class="container">
 			<div class="row align-items-center v-h-full">
 
-				<div class="col-lg-10 col-xxl-6">
-					<h1 class="heading-2 text-white mb-5" data-aos="fade-up">Contacto</h1>
-					<p data-aos="fade-up" class="d-flex" data-aos-delay="200">
-						<a href="virtual.html" class="btn btn-primary-outline white me-4">Virtual</a>
-						<a href="https://www.youtube.com/watch?v=LTCqvDPe_qc" 
-						   class="glightbox d-inline-flex align-items-center playvid"
-						   aria-label="Ver video de nuestro trabajo">
-							<span class="icon-play me-2"></span>
-							<span>Mira nuestro trabajo</span>
-						</a>
-					</p>
+				<div class="col-lg-7 col-xxl-6 mx-auto text-center">
+					<h1 class="heading-2 text-white mb-3" data-aos="fade-up">Contáctanos</h1>
+					<p data-aos="fade-up" data-aos-delay="200" class="text-white lead mb-4">Nuestro equipo está disponible para responder cualquier consulta que tengas sobre nuestros proyectos académicos, actividades, inscripciones o colaboraciones. También estamos abiertos a conectar con profesionales e instituciones interesadas en contribuir al desarrollo arquitectónico y urbano de nuestra comunidad.</p>
+					<p data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-primary-outline white me-4">Escríbenos</a></p>
 				</div>
 
 			</div>
 		</div>
-
+	</div>
+	
+    <div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="map-responsive">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.4935960534456!2d-68.13093492374796!3d-16.50513558479245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f21a1e3c2d84f%3A0x3f35f84de65a8e08!2sCarrera%20de%20Arquitectura%20UMSA!5e0!3m2!1ses!2sbo!4v1699921095118!5m2!1ses!2sbo" 
+							width="100%" 
+							height="450" 
+							style="border:0;" 
+							allowfullscreen="" 
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade">
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
+	<style>
+		.map-responsive {
+			overflow: hidden;
+			padding-bottom: 50%;
+			position: relative;
+			height: 0;
+		}
+		.map-responsive iframe {
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			/* Filtros para blanco y negro */
+			filter: grayscale(90%);
+			-webkit-filter: grayscale(10%);
+			transition: filter 0.3s ease;
+		}
+
+		/* Opcional: volver a color al pasar el mouse */
+		.map-responsive iframe:hover {
+			filter: grayscale(0%);
+			-webkit-filter: grayscale(0%);
+		}
+	</style>
 
 	<div class="site-footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="widget">
+						<h3>Dirección Carrera Arquitectura</h3>
+						<address>Calle Héroes del Acre 1850 (San Pedro), Ciudad La Paz - Bolivia </address>
+						<ul class="list-unstyled links">
+							<li><a href="tel://59177777777">+591-77777777</a></li>
+							<li><a href="tel://59167777777">+591-67777777</a></li>
+							<li><a href="mailto:info@taller-d.com">info@taller-d.com</a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-4 -->
+				<div class="col-lg-4">
+					<div class="widget">
+						<h3>Recursos</h3>
+						<ul class="list-unstyled float-start links">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+						</ul>
+						</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-4 -->
+				<div class="col-lg-4">
+					<div class="widget">
+						<h3>Enlaces</h3>
+						<ul class="list-unstyled links">
+							<li><a href="https://faadu.umsa.bo/">Facultad de Artes, Diseño y urbanismo - UMSA</a></li>
+						</ul>
+
 						<ul class="list-unstyled social">
 							<li><a href="#"><span class="icon-instagram"></span></a></li>
 							<li><a href="#"><span class="icon-twitter"></span></a></li>
 							<li><a href="#"><span class="icon-facebook"></span></a></li>
 							<li><a href="#"><span class="icon-linkedin"></span></a></li>
-							<li><a href="#"><span class="icon-youtube"></span></a></li>
-						</ul>
+                            <li><a href="#"><span class="icon-youtube"></span></a></li>
+							</ul>
 					</div> <!-- /.widget -->
 				</div> <!-- /.col-lg-4 -->
 			</div> <!-- /.row -->
 
 			<div class="row mt-5">
 				<div class="col-12 text-center">
-					<p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved - Taller-D FAADU-UMSA &mdash; Desarrolado por <a href="https://pulsocreativos.com">PulsoCreativos</a> <!-- License information: https://untree.co/license/ -->
+					<p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a> <!-- License information: https://untree.co/license/ -->
 					</p>
 				</div>
 			</div>
-		</div> 
-	</div>
-
-	<!-- Preloader -->
-	<div id="overlayer"></div>
-	<div class="loader">
-		<div class="spinner-border" role="status">
-			<span class="visually-hidden">Loading...</span>
-		</div>
-	</div>
-
+		</div> <!-- /.container -->
+	</div> <!-- /.site-footer -->
 
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/tiny-slider.js"></script>
